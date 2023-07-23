@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: 'Mulish', sans-serif;
+  font-size: 62.5%;
+
+  --color-border: hsl(195, 91%, 25%);
+  --color-background: hsl(0, 0%, 100%);
+  --color-font: hsl(240, 6%, 13%);
+  --color-button: hsl(195, 91%, 25%);
+  --color-input-border: hsla(0, 0%, 100%, 0.2);
+  --color-input-background: hsl(195, 46%, 40%);
+}
+
+body {
+  background: var(--color-background);
+
+  font-size: 1.6rem;
+  color: var(--color-font);
+}
+
+header {
+  background: var(--color-border);
+  display: flex;
+  width: 43.0rem;
+  height: 7.0rem;
+  padding: 1.2rem 2.8rem;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+header img {
+  width: 4.2rem;
+  height: 4.2rem;
+
+  border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  background: var(--color-background);
+  
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  align-items: center;
+  gap: 1.2rem;
+  flex: 1 0 0;
+
+  border-radius: 0.4rem;
+  border-color: var(--color-input-border);
+
+  background: var(--color-input-background);
+}
+
+::placeholder {
+  color: var(--color-background);  
+}
+
+main img {
+  width: 43.0rem;
+  height: 29.1rem;
+
+  border-radius: 5px;
+  padding-bottom: 3.1rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+
+  padding-left: 2.2rem;
+}
+
+button {
+  display: flex;
+  padding: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50%;
+  background: var(--color-button);
+  border: none;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  padding-left: 2.2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 3.2rem;
+}
+
+main p {
+  width: 38.2rem;
+  padding-left: 2.2rem;
+  
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.side-bar h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-top: 3.4rem;
+  padding-bottom: 3.2rem;
+}
+
+.item {
+  display: flex;
+  padding-bottom: 3.2rem;
+  align-items: stretch;
+}
+
+section img {
+  width: 15.1rem;
+  height: 10rem;
+  border-radius: 5px;
+  padding-left: 2.2rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-left: 1.6rem;
+  display: flex;
+}
+
+section p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  width: 21.5rem;
+  padding-top: 0.5rem;
+}
+
+footer {
+  background: var(--color-border);
+  display: flex;
+  width: 43rem;
+  height: 6.4rem;
+  padding: 1.6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.0rem;
+  flex-shrink: 0;
+  color: var(--color-background);
+}
